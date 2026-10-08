@@ -1,0 +1,29 @@
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#2f81f7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+.nav{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:rgba(13,17,23,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:10}
+.nav nav a{margin-left:1.5rem;color:var(--text)}
+.logo{font-weight:700;font-size:1.2rem}
+section{max-width:1000px;margin:0 auto;padding:4rem 1.5rem}
+.hero{text-align:center;padding:8rem 1.5rem}
+.hero h1{font-size:clamp(2.5rem,7vw,4.5rem);margin:.2rem 0}
+.eyebrow{color:var(--accent);margin:0}
+.tagline{color:var(--muted);font-size:1.15rem}
+.buttons{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.4rem;border:1px solid var(--border);border-radius:8px;color:var(--text)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{opacity:.85}
+h2{font-size:2rem;border-bottom:1px solid var(--border);padding-bottom:.5rem}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.2rem;display:flex;flex-direction:column;gap:.5rem;color:var(--text);transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card h3{margin:0;color:var(--accent)}
+.card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+.tag{font-size:.8rem;color:var(--muted)}
+.cv-frame{width:100%;height:700px;border:1px solid var(--border);border-radius:8px;margin-top:1.5rem;background:#fff}
+footer{text-align:center;padding:2rem;color:var(--muted);border-top:1px solid var(--border)}
+code{background:var(--card);padding:.1rem .4rem;border-radius:4px}
+@media(max-width:600px){.nav nav a{margin-left:.8rem}}

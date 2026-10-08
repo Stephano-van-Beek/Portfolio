@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stephano van Beek | Portfolio</title>
+  <meta name="description" content="HBO-ICT Cyber Security student interested in Cyber Security, Software Development & Technology">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">SvB</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <p class="eyebrow">Hi, I'm</p>
+    <h1>Stephano van Beek</h1>
+    <p class="tagline">HBO-ICT Cyber Security student<br>Interested in Cyber Security, Software Development &amp; Technology</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View my work</a>
+      <a class="btn" href="cv.pdf" download>Download CV</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I'm a Cyber Security student at HBO-ICT. I've worked with PHP, HTML/CSS, Python, MySQL and Yii. Edit this text to tell your own story.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="muted">Loaded live from my public GitHub repositories.</p>
+    <div id="repos" class="grid"><p>Loading...</p></div>
+  </section>
+
+  <section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <p class="muted">Upload your CV as <code>cv.pdf</code> in the root of this repo.</p>
+    <a class="btn primary" href="cv.pdf" download>Download CV (PDF)</a>
+    <iframe src="cv.pdf" title="CV" class="cv-frame"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><a href="https://github.com/Stephano-van-Beek">GitHub</a> &middot; add your email / LinkedIn here</p>
+  </section>
+
+  <footer>&copy; <span id="year"></span> Stephano van Beek</footer>
+  <script src="script.js"></script>
+</body>
+</html>
