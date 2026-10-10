@@ -1,4 +1,4 @@
-﻿# Portfolio
+# Portfolio
 
 HBO-ICT Cyber Security student | Interested in Cyber Security, Software Development & Technology
 
@@ -46,7 +46,7 @@ http://localhost:8000
 index.html      home (latest 3 projects)
 projects.html   all repos (auto-loaded from GitHub)
 mbo.html        repos with the GitHub topic "mbo"
-cv.html         CV page
+about.html      About me + CV page
 css/            style.css (theme) + portfolio.css (additions)
 js/             main.js (nav/footer) + repos.js (GitHub loader)
 assets/         cv.pdf goes here
@@ -56,5 +56,5 @@ assets/         cv.pdf goes here
 
 - GitHub username and MBO topic: top of `js/repos.js`
 - New repositories appear automatically; add the topic `mbo` to a repo to move it to the MBO page
-- CV: put `assets/cv.pdf` and edit `cv.html`
+- CV: put `assets/cv.pdf` and edit `html/about.html`
 - Colors: variables at the top of `css/style.css`
