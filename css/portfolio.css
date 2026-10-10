@@ -1,0 +1,70 @@
+/* Portfolio-specific additions on top of style.css */
+
+.brand-logo-text {
+  display: grid;
+  place-items: center;
+  width: 40px; height: 40px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  color: var(--cyan-bright);
+  font-weight: 800;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 8px var(--cyan-glow));
+}
+
+.topbar .brand { text-decoration: none; color: inherit; }
+.topnav a.active { color: var(--cyan-bright); background: var(--cyan-soft); border-color: var(--border-strong); }
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+.section-title {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 40px 0 16px;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.repo-grid .card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding: 22px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.repo-grid .card:hover { box-shadow: 0 0 20px rgba(0, 212, 255, 0.12); transform: translateY(-2px); }
+.repo-grid .card h3 { margin: 0 0 8px; color: var(--cyan-bright); font-size: 0.95rem; }
+.repo-grid .card p { margin: 0 0 16px; color: var(--text-soft); font-size: 0.9rem; flex: 1; }
+.repo-meta { font-size: 0.72rem; color: var(--text-muted); font-family: ui-monospace, Consolas, monospace; letter-spacing: 0.5px; }
+
+.muted { color: var(--text-muted); }
+.state-msg { color: var(--text-muted); font-family: ui-monospace, Consolas, monospace; }
+
+.cv-frame {
+  width: 100%;
+  height: 80vh;
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.cv-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.cv-list li { border-left: 2px solid var(--cyan); padding-left: 14px; }
+.cv-list strong { display: block; color: var(--text); }
+.cv-list span { color: var(--text-muted); font-size: 0.85rem; }
+
+.contact-links a { color: var(--cyan-bright); }
+
+@media (max-width: 720px) {
+  .topbar-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .topnav { flex-wrap: wrap; }
+}

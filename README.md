@@ -1,4 +1,4 @@
-# Portfolio
+﻿# Portfolio
 
 HBO-ICT Cyber Security student | Interested in Cyber Security, Software Development & Technology
 
@@ -40,24 +40,21 @@ Then go to:
 http://localhost:8000
 ```
 
-## Files
+## Structure
 
-- `index.html` — main landing page
-- `style.css` — visual styling
-- `script.js` — loads public GitHub repositories
-- `cv.pdf` — your CV file, place this in the root of the repository
+```
+index.html      home (latest 3 projects)
+projects.html   all repos (auto-loaded from GitHub)
+mbo.html        repos with the GitHub topic "mbo"
+cv.html         CV page
+css/            style.css (theme) + portfolio.css (additions)
+js/             main.js (nav/footer) + repos.js (GitHub loader)
+assets/         cv.pdf goes here
+```
 
 ## Customization
 
-You can edit the following parts to make it your own:
-
-- personal introduction text
-- GitHub username in `script.js`
-- contact details
-- CV file
-- colors and layout in `style.css`
-
-## Notes
-
-- The repositories section uses the GitHub API to show your public repositories.
-- The CV download button will work once `cv.pdf` is added to the repository.
+- GitHub username and MBO topic: top of `js/repos.js`
+- New repositories appear automatically; add the topic `mbo` to a repo to move it to the MBO page
+- CV: put `assets/cv.pdf` and edit `cv.html`
+- Colors: variables at the top of `css/style.css`
