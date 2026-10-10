@@ -1,28 +1,25 @@
-const NAV = [
-  ['index.html', 'Home'],
-  ['projects.html', 'Projects'],
-  ['mbo.html', 'MBO'],
-  ['cv.html', 'CV'],
-];
+// Acts like a PHP include: loads html/partials/*.html into every page.
+// Each page sets <body data-root=""> (root) or data-root="../" (inside html/).
+// Needs a web server (GitHub Pages or `python -m http.server`), not file://.
+const root = document.body.dataset.root || '';
+const here = location.pathname.split('/').pop() || 'index.html';
 
-const page = location.pathname.split('/').pop() || 'index.html';
+async function include(id, file) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  try {
+    const res = await fetch(`${root}html/partials/${file}`);
+    if (!res.ok) throw new Error(res.status);
+    el.innerHTML = (await res.text()).replaceAll('{{root}}', root);
+  } catch {
+    el.innerHTML = '<p class="state-msg">Could not load ' + file + '. Use a web server, not file://.</p>';
+  }
+}
 
-document.getElementById('site-header').innerHTML = `
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-logo-text">SvB</span>
-        <span class="brand-text">
-          <span class="brand-title">Stephano van Beek</span>
-          <span class="brand-sub">Cyber Security &middot; HBO-ICT</span>
-        </span>
-      </a>
-      <nav class="topnav">
-        ${NAV.map(([href, label]) =>
-          `<a href="${href}"${href === page ? ' class="active"' : ''}>${label}</a>`).join('')}
-      </nav>
-    </div>
-  </header>`;
-
-document.getElementById('site-footer').innerHTML =
-  `<footer class="footer">&copy; ${new Date().getFullYear()} Stephano van Beek</footer>`;
+(async () => {
+  await Promise.all([include('site-header', 'header.html'), include('site-footer', 'footer.html')]);
+  document.querySelectorAll('.topnav a').forEach(a => {
+    if (a.getAttribute('href').split('/').pop() === here) a.classList.add('active');
+  });
+  document.querySelectorAll('[data-year]').forEach(s => (s.textContent = new Date().getFullYear()));
+})();
