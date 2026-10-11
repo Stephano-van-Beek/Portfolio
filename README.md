@@ -44,8 +44,7 @@ http://localhost:8000
 
 ```
 index.html      home (latest 3 projects)
-projects.html   all repos (auto-loaded from GitHub)
-mbo.html        repos with the GitHub topic "mbo"
+projects.html   all repos in two blocks: MBO and other (auto-loaded from GitHub)
 about.html      About me + CV page
 css/            style.css (theme) + portfolio.css (additions)
 js/             main.js (nav/footer) + repos.js (GitHub loader)
@@ -55,6 +54,6 @@ assets/         cv.pdf goes here
 ## Customization
 
 - GitHub username and MBO topic: top of `js/repos.js`
-- New repositories appear automatically; add the topic `mbo` to a repo to move it to the MBO page
-- CV: put `assets/cv.pdf` and edit `html/about.html`
+- New repositories appear automatically; repos with "mbo" in the name (or the topic `mbo`) go in the MBO block on the Projects page
+- CV: put `assets/CV_Stephano.pdf` and `assets/CV_Stephano.docx` and edit `html/about.html`
 - Colors: variables at the top of `css/style.css`

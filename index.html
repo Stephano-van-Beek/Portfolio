@@ -17,22 +17,29 @@
       <div class="hero-inner">
         <div class="hero-meta"><span class="hero-tag">Portfolio</span></div>
         <h1 class="hero-title">Stephano van Beek</h1>
-        <p class="hero-lead">HBO-ICT Cyber Security student. Interested in Cyber Security, Software Development &amp; Technology. I've worked with PHP, HTML/CSS, Python, MySQL and Yii.</p>
+        <p class="hero-lead" data-i18n="home.lead">HBO-ICT Cyber Security student. Interested in Cyber Security, Software Development &amp; Technology. I've worked with PHP, HTML/CSS, Python, MySQL and Yii.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="html/projects.html">View my work</a>
-          <a class="btn btn-secondary" href="html/about.html">About me</a>
+          <a class="btn btn-primary" href="html/projects.html" data-i18n="home.work">View my work</a>
+          <a class="btn btn-secondary" href="html/about.html" data-i18n="home.about">About me</a>
         </div>
       </div>
     </section>
 
-    <h2 class="section-title">Latest projects</h2>
+    <section class="card">
+      <h2 class="card-title" data-i18n="home.why.title">About this portfolio</h2>
+      <p data-i18n="home.why.p1">This website is my personal portfolio. I built it to show what I have made during my studies and to practise web development myself, using plain HTML, CSS and JavaScript.</p>
+      <p data-i18n="home.why.p2">Projects are loaded automatically from my GitHub, so a new repository appears here on its own. You will find my projects (MBO and other) and my CV on the other pages.</p>
+    </section>
+
+    <h2 class="section-title" data-i18n="home.featured">Featured projects</h2>
     <div id="repos" class="repo-grid" data-filter="featured"><p class="state-msg">Loading...</p></div>
 
-    <h2 class="section-title">Contact</h2>
-    <p class="contact-links"><a href="https://github.com/Stephano-van-Beek">GitHub</a> &middot; add your email / LinkedIn here</p>
+    <h2 class="section-title" data-i18n="home.contact">Contact</h2>
+    <p class="contact-links"><a href="https://github.com/Stephano-van-Beek">GitHub</a> &middot; <a href="mailto:Stephano.van.beek@gmail.com">Stephano.van.beek@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/st%C3%A9phano-v-b697a8215/">LinkedIn</a></p>
   </main>
 
   <div id="site-footer"></div>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script src="js/repos.js"></script>
 </body>

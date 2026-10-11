@@ -89,6 +89,12 @@ code, pre, .mono {
    TOP BAR
    ============================================================================ */
 
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .topbar {
   position: relative;
   background: linear-gradient(180deg, rgba(6, 9, 18, 0.95) 0%, rgba(10, 14, 26, 0.85) 100%);

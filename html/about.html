@@ -14,33 +14,126 @@
   <main class="content">
     <section class="hero">
       <div class="hero-inner">
-        <div class="hero-meta"><span class="hero-tag">About me</span></div>
-        <h1 class="hero-title">About me</h1>
-        <p class="hero-lead">HBO-ICT Cyber Security student.</p>
+        <div class="hero-meta"><span class="hero-tag" data-i18n="about.tag">About me</span></div>
+        <h1 class="hero-title" data-i18n="about.title">About me</h1>
+        <p class="hero-lead" data-i18n="about.lead">HBO-ICT Cyber Security student from Lelystad.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="../assets/cv.pdf" download>Download CV (PDF)</a>
+          <a class="btn btn-primary" href="../assets/CV_Stephano.pdf" download data-i18n="about.cv">Download CV (PDF)</a>
+          <a class="btn" href="../assets/CV_Stephano.docx" download data-i18n="about.cvdoc">Download CV (Word)</a>
         </div>
       </div>
     </section>
 
-    <div class="card">
-      <h2 class="card-title">Education</h2>
-      <ul class="cv-list">
-        <li><strong>HBO-ICT, Cyber Security</strong><span>Edit this: school, years</span></li>
-        <li><strong>MBO</strong><span>Edit this: study, school, years</span></li>
+    <section class="card">
+      <h2 class="card-title" data-i18n="about.character.title">Character</h2>
+      <p data-i18n="about.character.text">I am curious, eager to learn, communicative and sporty. Always willing to keep learning.</p>
+    </section>
+
+    <div class="about-columns">
+      <section class="card">
+        <h2 class="card-title" data-i18n="about.work.title">Work experience</h2>
+        <ol class="timeline">
+          <li>
+            <span class="tl-date" data-i18n="work1.date">Nov 2023 – Feb 2024</span>
+            <strong>Software developer</strong>
+            <span class="tl-place">Raion design · Almere</span>
+            <p data-i18n="work1.desc">Building a website with WordPress.</p>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="work2.date">Jan 2023 – Jul 2023</span>
+            <strong>Software developer</strong>
+            <span class="tl-place">MAK aandrijvingen · Lelystad</span>
+            <p data-i18n="work2.desc">Building inventory management and incident reporting applications.</p>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="work3.date">Sep 2020 – Jun 2022</span>
+            <strong data-i18n="work3.title">Bar staff</strong>
+            <span class="tl-place">Mixed Hockeyclub · Lelystad</span>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="work4.date">Feb 2021 – Jun 2021</span>
+            <strong data-i18n="work4.title">ICT internship</strong>
+            <span class="tl-place">Hunkemöller · Hilversum</span>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="work5.date">May 2019 – Jun 2019</span>
+            <strong data-i18n="work5.title">Internship, physiotherapy assistant</strong>
+            <span class="tl-place">Topfit</span>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="work6.date">May 2018 – Jun 2018</span>
+            <strong data-i18n="work6.title">Internship, fitness employee</strong>
+            <span class="tl-place">RAF-Sport</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title" data-i18n="about.edu.title">Education</h2>
+        <ol class="timeline">
+          <li>
+            <span class="tl-date" data-i18n="edu1.date">2023 – present</span>
+            <strong data-i18n="edu1.title">Cybersecurity (HBO)</strong>
+            <span class="tl-place">Hogeschool van Amsterdam</span>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="edu2.date">2021 – 2023</span>
+            <strong data-i18n="edu2.title">Software Developer (MBO level 4)</strong>
+            <span class="tl-place">ROCvA, MBO College Amstelland</span>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="edu3.date">2019 – 2021</span>
+            <strong data-i18n="edu3.title">ICT (MBO level 3)</strong>
+            <span class="tl-place">ROCvA, MBO College ZuidOost</span>
+          </li>
+          <li>
+            <span class="tl-date" data-i18n="edu4.date">2015 – 2019</span>
+            <strong data-i18n="edu4.title">VMBO-K (pre-vocational secondary education)</strong>
+            <span class="tl-place">SGL, Lelystad</span>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2 class="card-title" data-i18n="about.skills.title">Skills</h2>
+      <ul class="cv-list skills-grid">
+        <li><strong data-i18n="skill.m365">Microsoft 365</strong><span data-i18n="skill.m365.v">Word, PowerPoint, Teams, OneDrive (Excel – basic level)</span></li>
+        <li><strong data-i18n="skill.os">Operating systems</strong><span data-i18n="skill.os.v">Windows, Windows Server, Ubuntu</span></li>
+        <li><strong data-i18n="skill.linux">Linux / Ubuntu</strong><span data-i18n="skill.linux.v">Basic · 0.5 year</span></li>
+        <li><strong data-i18n="skill.malware">Malware analysis</strong><span data-i18n="skill.malware.v">Basic experience unpacking, investigating and analysing malware · 0.5 year</span></li>
+        <li><strong data-i18n="skill.web">HTML / CSS</strong><span data-i18n="skill.web.v">Basic to intermediate · 3+ years</span></li>
+        <li><strong data-i18n="skill.php">PHP</strong><span data-i18n="skill.php.v">Basic to intermediate · 3+ years</span></li>
+        <li><strong data-i18n="skill.js">JavaScript</strong><span data-i18n="skill.js.v">Basic · 3+ years</span></li>
+        <li><strong data-i18n="skill.py">Python</strong><span data-i18n="skill.py.v">Basic · 3+ years</span></li>
+        <li><strong data-i18n="skill.db">MySQL</strong><span data-i18n="skill.db.v">Basic · 3+ years</span></li>
+        <li><strong data-i18n="skill.fw">Yii</strong><span data-i18n="skill.fw.v">Basic · 1 year</span></li>
+        <li><strong data-i18n="skill.ai">AI &amp; machine learning</strong><span data-i18n="skill.ai.v">Basic knowledge of training and testing AI models · 0.5 year</span></li>
+        <li><strong data-i18n="skill.cyber">Cybersecurity</strong><span data-i18n="skill.cyber.v">Basic knowledge of IT and information security · 3+ years</span></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2 class="card-title">Skills</h2>
-      <p>PHP, HTML/CSS, Python, MySQL, Yii</p>
-    </div>
+    <div class="about-columns">
+      <section class="card">
+        <h2 class="card-title" data-i18n="about.lang.title">Languages</h2>
+        <ul class="cv-list">
+          <li><strong data-i18n="lang.nl">Dutch</strong><span data-i18n="lang.nl.v">Native language</span></li>
+          <li><strong data-i18n="lang.en">English</strong><span data-i18n="lang.en.v">Speaking: very good · Writing: good</span></li>
+        </ul>
+      </section>
 
-    <iframe src="../assets/cv.pdf" title="CV" class="cv-frame"></iframe>
-    <p class="muted">Put your CV at <code>assets/cv.pdf</code>.</p>
+      <section class="card">
+        <h2 class="card-title" data-i18n="about.extra.title">Interests &amp; other</h2>
+        <ul class="cv-list">
+          <li><strong data-i18n="extra.interests">Interests</strong><span data-i18n="extra.interests.v">Gaming, fitness and hockey</span></li>
+          <li><strong data-i18n="extra.other">Other skills</strong><span data-i18n="extra.other.v">Driver's licence (B)</span></li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <div id="site-footer"></div>
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

@@ -22,4 +22,5 @@ async function include(id, file) {
     if (a.getAttribute('href').split('/').pop() === here) a.classList.add('active');
   });
   document.querySelectorAll('[data-year]').forEach(s => (s.textContent = new Date().getFullYear()));
+  if (window.applyLang) applyLang(currentLang());
 })();
